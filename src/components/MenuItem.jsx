@@ -1,7 +1,7 @@
 import React from 'react'
 import './MenuItem.css'
 
-const MenuItem = ({ item }) => {
+const MenuItem = ({ item, addToCart }) => {
   const getCategoryBadge = () => {
     switch(item.category) {
       case 'veg':
@@ -13,6 +13,10 @@ const MenuItem = ({ item }) => {
       default:
         return null
     }
+  }
+
+  const handleAddToCart = () => {
+    addToCart(item)
   }
 
   return (
@@ -36,6 +40,9 @@ const MenuItem = ({ item }) => {
         <p className="item-description">{item.description}</p>
         <div className="item-footer">
           <span className="item-price">₹{item.price}</span>
+          <button className="add-to-cart-btn" onClick={handleAddToCart}>
+            Add to Cart
+          </button>
         </div>
       </div>
     </div>

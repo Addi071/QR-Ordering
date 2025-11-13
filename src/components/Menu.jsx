@@ -34,7 +34,7 @@ const menuItems = [
   { id: 24, name: 'Mint Mojito', description: 'Fresh mint mocktail', price: 100, category: 'drinks', image: 'https://images.unsplash.com/photo-1627366422858-c5af17ac71ac?q=80&w=400&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D' },
 ]
 
-const Menu = () => {
+const Menu = ({ addToCart }) => {
   const [filter, setFilter] = useState('all')
 
   const filteredItems = filter === 'all' 
@@ -73,7 +73,7 @@ const Menu = () => {
       <div className="menu-items">
         {filteredItems.length > 0 ? (
           filteredItems.map(item => (
-            <MenuItem key={item.id} item={item} />
+            <MenuItem key={item.id} item={item} addToCart={addToCart} />
           ))
         ) : (
           <p className="no-items">No items found</p>
