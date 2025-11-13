@@ -36,11 +36,11 @@ const Footer = () => {
           <div className="footer-info">
             <p className="info-item">
               <span className="info-icon">📍</span>
-              123 Food Street, Downtown District
+              Namaskar Chowk, Airport Road
             </p>
             <p className="info-item">
               <span className="info-icon">🏙️</span>
-              City Center, State 12345
+              Nanded, Maharashtra 431605
             </p>
           </div>
         </div>
@@ -50,11 +50,11 @@ const Footer = () => {
           <div className="footer-info">
             <p className="info-item">
               <span className="info-icon">📞</span>
-              +1 (555) 123-4567
+              +91 9322484356
             </p>
             <p className="info-item">
               <span className="info-icon">✉️</span>
-              info@granddelight.com
+              infogranddelight@gmail.com
             </p>
             <p className="info-item">
               <span className="info-icon">🌐</span>
