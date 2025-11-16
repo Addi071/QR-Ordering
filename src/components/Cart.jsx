@@ -59,7 +59,7 @@ const Cart = ({
     if (cart.length === 0) return
 
     const billText = formatBill()
-    const whatsappNumber = '9322484356'
+    const whatsappNumber = '7769987067'
     const encodedMessage = encodeURIComponent(billText)
     const whatsappUrl = `https://wa.me/91${whatsappNumber}?text=${encodedMessage}`
     
